@@ -18,12 +18,12 @@ internal class Program
     {
         Console.WriteLine("Ingresar un numero");
 
-        if(!int.TryParse(Console.ReadLine(), out int numberA))
+        if (!int.TryParse(Console.ReadLine(), out int numberA))
         {
             Console.WriteLine("El numero ingresado no es un numero;");
         }
 
-        if(!int.TryParse(Console.ReadLine(), out int numberB))
+        if (!int.TryParse(Console.ReadLine(), out int numberB))
         {
             Console.WriteLine("El numero ingresado no es un numero;");
         }
@@ -36,5 +36,7 @@ internal class Program
         {
             Console.Write($"{numberB}, {numberA}");
         }
+
+        // 1.1.01 Sequence
     }
 }
