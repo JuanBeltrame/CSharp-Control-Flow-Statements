@@ -11,6 +11,8 @@ mostrarlos ordenados en forma creciente.
 ----------------------------------------------------------------------
 */
 using System.ComponentModel;
+using System.Runtime.ConstrainedExecution;
+using System.Xml.XPath;
 
 internal class Program
 {
