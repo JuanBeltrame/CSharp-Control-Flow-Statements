@@ -11,10 +11,6 @@ Dado un número determinar si es positivo o negativo.
 System.Console.Write("Ingresar un numero: ");
 int numero = int.Parse(Console.ReadLine());
 if (numero > 0)
-{
     Console.WriteLine($"El numero: {numero} ingresado, es POSITIVO");
-}
 else
-{
     Console.WriteLine($"El numero: {numero} ingresado, es NEGATIVO");
-}

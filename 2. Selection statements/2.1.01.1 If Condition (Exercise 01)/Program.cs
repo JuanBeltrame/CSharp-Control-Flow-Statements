@@ -10,9 +10,6 @@ Dados dos números distintos,
 mostrarlos ordenados en forma creciente.
 ----------------------------------------------------------------------
 */
-using System.ComponentModel;
-using System.Runtime.ConstrainedExecution;
-using System.Xml.XPath;
 
 internal class Program
 {
@@ -21,24 +18,12 @@ internal class Program
         Console.WriteLine("Ingresar un numero");
 
         if (!int.TryParse(Console.ReadLine(), out int numberA))
-        {
             Console.WriteLine("El numero ingresado no es un numero;");
-        }
-
         if (!int.TryParse(Console.ReadLine(), out int numberB))
-        {
             Console.WriteLine("El numero ingresado no es un numero;");
-        }
-
         if (numberA < numberB)
-        {
             Console.Write($"{numberA}, {numberB}");
-        }
         else
-        {
             Console.Write($"{numberB}, {numberA}");
-        }
-
-        // 1.1.01 Sequence
     }
 }

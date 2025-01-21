@@ -8,4 +8,10 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+	<ItemGroup>
+		<Using Include="System.ComponentModel"/>
+		<Using Include="System.Runtime.ConstrainedExecution"/>
+		<Using Include="System.Xml.XPath"/>
+	</ItemGroup>
+
 </Project>
