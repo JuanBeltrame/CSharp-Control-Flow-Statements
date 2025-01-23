@@ -13,17 +13,17 @@ mediante un mensaje si pertenecen o no a un triángulo rectángulo.
 int angle1;
 int angle2;
 int angle3;
-string result; 
+string result;
 
-Console.Write("Ingresar medida del primer angulo: "); 
+Console.Write("Ingresar medida del primer angulo: ");
 angle1 = int.Parse(Console.ReadLine()!);
 Console.Write("Ingresar medida del segundo angulo: ");
-angle2 = int.Parse( Console.ReadLine()!);
-Console.Write("Ingresar medida del tercer angulo: "); 
+angle2 = int.Parse(Console.ReadLine()!);
+Console.Write("Ingresar medida del tercer angulo: ");
 angle3 = int.Parse(Console.ReadLine()!);
 
 if (angle1 == 90 || angle2 == 90 || angle3 == 90)
-   result = angle1 + angle2 + angle3 == 180 ? "Es un triangulo rectangulo" : "Las medidas ingresadas no corresponden a un rectangulo";
+    result = angle1 + angle2 + angle3 == 180 ? "Es un triangulo rectangulo" : "Las medidas ingresadas no corresponden a un rectangulo";
 else
     result = angle1 + angle2 + angle3 == 180 ? "No es un triangulo rectangulo" : "Ni siquiera es un triangulo";
 
