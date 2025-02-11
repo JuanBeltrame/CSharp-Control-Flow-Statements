@@ -9,6 +9,8 @@ Ingresar tres letras mayúsculas y mostrarlas ordenadas alfabéticamente.
 ----------------------------------------------------------------------
 */
 
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.06";
+
 System.Console.WriteLine("Ingresar Tres Letras");
 char letter1 = char.Parse(Console.ReadLine());
 char letter2 = char.Parse(Console.ReadLine());

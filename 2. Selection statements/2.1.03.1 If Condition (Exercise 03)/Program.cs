@@ -9,6 +9,8 @@ Dada la medida de cada uno de los tres ángulos de un triángulo determinar e in
 mediante un mensaje si pertenecen o no a un triángulo rectángulo.
 ----------------------------------------------------------------------
 */
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.03";
+
 Console.Write("Ingresar la medida 1/3: ");
 int angle1 = int.Parse(Console.ReadLine());
 Console.Write("Ingresar la medida 2/3: ");

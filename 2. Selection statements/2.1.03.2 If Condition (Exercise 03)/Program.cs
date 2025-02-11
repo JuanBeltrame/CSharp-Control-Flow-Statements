@@ -10,6 +10,8 @@ mediante un mensaje si pertenecen o no a un triángulo rectángulo.
 ----------------------------------------------------------------------
 */
 
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.03";
+
 int angle1;
 int angle2;
 int angle3;

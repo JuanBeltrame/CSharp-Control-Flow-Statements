@@ -8,6 +8,7 @@ Spanish:
 Dado un número determinar si es positivo o negativo.
 ----------------------------------------------------------------------
 */
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.02";
 System.Console.Write("Ingresar un numero: ");
 int numero = int.Parse(Console.ReadLine());
 if (numero > 0)

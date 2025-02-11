@@ -10,7 +10,7 @@ Determinar si el primero de un conjunto de tres números dados,
 es menor que los otros dos.
 ----------------------------------------------------------------------
 */
-using System.ComponentModel.DataAnnotations;
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.05";
 
 Console.WriteLine("Ingresar tres numeros: ");
 int number1 = int.Parse(Console.ReadLine());

@@ -15,6 +15,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        Console.Title = "Practica 1 - If Conditional - Exercise 2.1.01";
         Console.WriteLine("Ingresar un numero");
 
         if (!int.TryParse(Console.ReadLine(), out int numberA))

@@ -11,6 +11,7 @@ es menor que los otros dos.
 ----------------------------------------------------------------------
 */
 
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.05";
 
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("Enter three numbers: ");

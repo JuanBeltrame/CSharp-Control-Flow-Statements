@@ -14,6 +14,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        Console.Title = "Practica 1 - If Conditional - Exercise 2.1.01";
         Console.Write("Ingresar 2 Numeros: ");
         Console.WriteLine("Primer Valor: ");
         int firstValue = int.Parse(Console.ReadLine()!);

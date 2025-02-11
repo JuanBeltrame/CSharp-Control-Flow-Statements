@@ -9,7 +9,7 @@ Dado un número determinar si es positivo o negativo.
 ----------------------------------------------------------------------
 */
 
-using System.Timers;
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.02";
 
 Random rn = new();
 int rnValue = rn.Next(-10,10);

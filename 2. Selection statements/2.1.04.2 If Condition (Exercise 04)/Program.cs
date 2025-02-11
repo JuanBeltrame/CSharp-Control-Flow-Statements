@@ -10,6 +10,8 @@ Ingresar tres números enteros distintos.
 Determinar y mostrar si ingresaron en orden creciente.
 ----------------------------------------------------------------------
 */
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.04";
+
 
 Console.Write("Ingresar el PRIMER NUMERO: ");
 if (!int.TryParse(Console.ReadLine(), out int numberA))
