@@ -19,6 +19,9 @@ d. Las piezas de tipo B deben medir 180 mm y se admite un error de +/-3 mm.
 ----------------------------------------------------------------------
 */
 
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.07";
+Console.ForegroundColor = ConsoleColor.Yellow;
+
 System.Console.Write("Ingresar TIPO de pieza, 'A' o 'B: ");
 char tipoPieza = char.Parse(Console.ReadLine());
 char tipoPiezaMayus = char.ToUpper(tipoPieza);
