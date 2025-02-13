@@ -27,6 +27,8 @@ Console.WriteLine();
 
 char[] letters = [firstLetter, secondLetter, thirdLetter];
 SortLetters(letters);
+Console.WriteLine();
+DisplayLetters(letters);
 
 
 
@@ -52,4 +54,12 @@ static void SortLetters(char[] letters)
             }
         }
     }
+}
+
+static void DisplayLetters(char[] letters)
+{
+    Console.Write("Ordenadas quedarian asi: ");
+    for (int i = 0; i < letters.Length; i++)
+        Console.Write($"{letters[i] } ");
+    Console.WriteLine();
 }
