@@ -23,3 +23,37 @@ isósceles (2 lados iguales) o
 escaleno (3 lados distintos).
 ----------------------------------------------------------------------
 */
+
+string op;
+
+Console.Write("Ingresar un lado: ");
+if (!int.TryParse(Console.ReadLine()!, out int lado1))
+{
+    Console.WriteLine("Se debe ingresar un dato de tipo numerico");
+    return;
+}
+if (!int.TryParse(Console.ReadLine()!, out int lado2))
+{
+    Console.WriteLine("Se debe ingresar un dato de tipo numerico");
+    return;
+}
+if (!int.TryParse(Console.ReadLine()!, out int lado3))
+{
+    Console.WriteLine("Se debe ingresar un dato de tipo numerico");
+    return;
+}
+
+
+if (lado1 + lado2 + lado3 == 180)
+{
+
+    if ((lado1 is 90) && (lado2 is 90) && (lado3 is 90))
+    {
+        Console.WriteLine("Es un triangulo Equilatero.");
+    }
+}
+else
+    Console.WriteLine("Las medidas ingresadas no pertenecen a ningun tipo de triangulo.");
+
+
+
