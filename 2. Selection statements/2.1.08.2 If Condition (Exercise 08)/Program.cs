@@ -24,36 +24,50 @@ escaleno (3 lados distintos).
 ----------------------------------------------------------------------
 */
 
-string op;
+Console.Title = "Practica 1 - If Conditional - Exercise 2.1.08";
+Console.ForegroundColor = ConsoleColor.Yellow;
 
-Console.Write("Ingresar un lado: ");
-if (!int.TryParse(Console.ReadLine()!, out int lado1))
+Console.Write("Ingresar el primer lado: ");
+if (!int.TryParse(Console.ReadLine()!, out int lado1) || lado1 <= 0)
 {
     Console.WriteLine("Se debe ingresar un dato de tipo numerico");
     return;
 }
-if (!int.TryParse(Console.ReadLine()!, out int lado2))
+Console.Write("Ingresar el segundo lado: ");
+if (!int.TryParse(Console.ReadLine()!, out int lado2) || lado2 <= 0)
 {
     Console.WriteLine("Se debe ingresar un dato de tipo numerico");
     return;
 }
-if (!int.TryParse(Console.ReadLine()!, out int lado3))
+Console.Write("Ingresar el tercer lado: ");
+if (!int.TryParse(Console.ReadLine()!, out int lado3) || lado3 <= 0)
 {
     Console.WriteLine("Se debe ingresar un dato de tipo numerico");
     return;
 }
 
-
-if (lado1 + lado2 + lado3 == 180)
+bool esTriangulo = (lado1, lado2, lado3) switch
 {
+    var (a, b, c) when a + b > c && a + c > b && b + c > a => true,
+    _ => false
+};
 
-    if ((lado1 is 90) && (lado2 is 90) && (lado3 is 90))
+
+if (esTriangulo)
+{
+    string tipoTriangulo = (lado1, lado2, lado3) switch
     {
-        Console.WriteLine("Es un triangulo Equilatero.");
-    }
+        var (a, b, c) when a == b && b == c => "Es un triangulo Equilatero.",
+        var (a, b, c) when a == b || b == c || a == c => "Es un triangulo Isosceles",
+        _ => "Es un triangulo Escaleno"
+    };
+
+    Console.WriteLine(tipoTriangulo);
 }
 else
     Console.WriteLine("Las medidas ingresadas no pertenecen a ningun tipo de triangulo.");
+
+
 
 
 
